@@ -1,0 +1,531 @@
+{
+  "slug": "analysis-ii",
+  "title": "分析 II",
+  "subtitle": "从积分到流形：逼近与线性化的进阶",
+  "book": {
+    "title": "分析 II（Analysis II）",
+    "author": "Herbert Amann / Joachim Escher",
+    "source": [
+      "分析 II (Herbert Amann  Joachim Escher) (z-library.sk, 1lib.sk, z-lib.sk).pdf"
+    ]
+  },
+  "audience": "已读完《分析 I》或具备同等基础",
+  "goal": "掌握一元积分、多变量微分、线积分与复分析入门",
+  "learningPath": [
+    {
+      "step": "06",
+      "title": "积分与基本定理",
+      "chapterIds": [
+        "ch06"
+      ],
+      "checkpoint": "ch06 自测三题"
+    },
+    {
+      "step": "07",
+      "title": "多变量微分",
+      "chapterIds": [
+        "ch07"
+      ],
+      "checkpoint": "ch07 自测三题"
+    },
+    {
+      "step": "08",
+      "title": "线积分与全纯",
+      "chapterIds": [
+        "ch08"
+      ],
+      "checkpoint": "ch08 自测三题"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "ch06",
+      "title": "第 6 章：一元函数的积分",
+      "file": "chapters/ch06-integration.md",
+      "difficulty": 3
+    },
+    {
+      "id": "ch07",
+      "title": "第 7 章：多变量微分学",
+      "file": "chapters/ch07-multivariable.md",
+      "difficulty": 3
+    },
+    {
+      "id": "ch08",
+      "title": "第 8 章：线积分",
+      "file": "chapters/ch08-line-integrals.md",
+      "difficulty": 3
+    }
+  ],
+  "concepts": [
+    {
+      "id": "c06",
+      "title": "黎曼积分",
+      "file": "concepts/riemann-integral.md",
+      "chapterIds": [
+        "ch06"
+      ]
+    },
+    {
+      "id": "c07",
+      "title": "弗雷歇微分与雅可比矩阵",
+      "file": "concepts/frechet-derivative.md",
+      "chapterIds": [
+        "ch07"
+      ]
+    },
+    {
+      "id": "c08",
+      "title": "逆映射定理与隐函数定理",
+      "file": "concepts/inverse-implicit.md",
+      "chapterIds": [
+        "ch07"
+      ]
+    },
+    {
+      "id": "c09",
+      "title": "线积分与势函数",
+      "file": "concepts/line-integral.md",
+      "chapterIds": [
+        "ch08"
+      ]
+    },
+    {
+      "id": "c10",
+      "title": "全纯函数",
+      "file": "concepts/holomorphic.md",
+      "chapterIds": [
+        "ch08"
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "阶梯函数",
+      "def": "在分割的每个开区间上取常数值的函数。",
+      "chapterId": "ch06"
+    },
+    {
+      "term": "跳跃连续",
+      "def": "每点处左右单侧极限都存在（可不等于函数值）。",
+      "chapterId": "ch06"
+    },
+    {
+      "term": "分段连续",
+      "def": "只有有限个跳跃点的跳跃连续函数。",
+      "chapterId": "ch06"
+    },
+    {
+      "term": "柯西–黎曼积分",
+      "def": "本书对一元函数积分的称呼，由阶梯函数积分延拓得到。",
+      "chapterId": "ch06"
+    },
+    {
+      "term": "微积分基本定理",
+      "def": "变上限积分求导得被积函数；反之积分等于原函数端点差。",
+      "chapterId": "ch06"
+    },
+    {
+      "term": "反常积分",
+      "def": "区间无界或被积函数无界时，用极限定义的积分。",
+      "chapterId": "ch06"
+    },
+    {
+      "term": "绝对收敛",
+      "def": "被积函数绝对值可积；绝对收敛必收敛。",
+      "chapterId": "ch06"
+    },
+    {
+      "term": "傅里叶系数",
+      "def": "用三角函数内积投影得到的系数 aₖ、bₖ。",
+      "chapterId": "ch06"
+    },
+    {
+      "term": "伽马函数",
+      "def": "Γ(z)=∫t^(z−1)e^(−t)dt，满足 Γ(n+1)=n!。",
+      "chapterId": "ch06"
+    },
+    {
+      "term": "算子范数",
+      "def": "线性映射的最大放大倍数，‖A‖=sup‖Ax‖/‖x‖。",
+      "chapterId": "ch07"
+    },
+    {
+      "term": "弗雷歇导数",
+      "def": "使 f(a+h)=f(a)+Ah+o(‖h‖) 的唯一线性映射 A。",
+      "chapterId": "ch07"
+    },
+    {
+      "term": "雅可比矩阵",
+      "def": "导数在标准基下的矩阵，元素为偏导数。",
+      "chapterId": "ch07"
+    },
+    {
+      "term": "链式法则",
+      "def": "复合函数导数等于两个线性映射的复合（矩阵相乘）。",
+      "chapterId": "ch07"
+    },
+    {
+      "term": "黑塞矩阵",
+      "def": "二阶偏导组成的对称矩阵，表示二阶导数。",
+      "chapterId": "ch07"
+    },
+    {
+      "term": "逆映射定理",
+      "def": "导数可逆时函数局部可逆，逆映射 C¹ 且导数为原导数的逆。",
+      "chapterId": "ch07"
+    },
+    {
+      "term": "隐函数定理",
+      "def": "F(a,b)=0 且对 y 的偏导可逆时，可局部解出 y=φ(x)。",
+      "chapterId": "ch07"
+    },
+    {
+      "term": "拉格朗日乘子",
+      "def": "约束极值中使 ∇f=λ∇g 的比例因子。",
+      "chapterId": "ch07"
+    },
+    {
+      "term": "全变差",
+      "def": "所有分割折线长度的上确界。",
+      "chapterId": "ch08"
+    },
+    {
+      "term": "可求长",
+      "def": "全变差有限的曲线。",
+      "chapterId": "ch08"
+    },
+    {
+      "term": "普法夫形式",
+      "def": "形如 Σaⱼdxⱼ 的 1-形式。",
+      "chapterId": "ch08"
+    },
+    {
+      "term": "恰当形式",
+      "def": "等于某个函数微分的 1-形式。",
+      "chapterId": "ch08"
+    },
+    {
+      "term": "势函数",
+      "def": "满足 df=ω 的函数 f。",
+      "chapterId": "ch08"
+    },
+    {
+      "term": "全纯函数",
+      "def": "复可微的函数，等价于满足柯西–黎曼方程。",
+      "chapterId": "ch08"
+    },
+    {
+      "term": "亚纯函数",
+      "def": "除孤立极点外全纯的函数。",
+      "chapterId": "ch08"
+    },
+    {
+      "term": "留数",
+      "def": "洛朗展开中 (z−a)⁻¹ 的系数。",
+      "chapterId": "ch08"
+    }
+  ],
+  "patterns": {
+    "file": "patterns.md"
+  },
+  "cheatsheet": {
+    "file": "cheatsheet.md"
+  },
+  "quizzes": [
+    {
+      "id": "q01",
+      "chapterId": "ch06",
+      "type": "single",
+      "question": "下列关于跳跃连续函数的说法，正确的是？",
+      "options": [
+        "必须连续",
+        "每点左右极限存在，可以不等于函数值",
+        "只能有有限个间断点",
+        "必须有界变差"
+      ],
+      "answer": 1,
+      "explain": "跳跃连续只要求单侧极限存在；分段连续才是“有限个跳跃点”的更强要求。跳跃连续函数在紧区间上自动有界。"
+    },
+    {
+      "id": "q02",
+      "chapterId": "ch06",
+      "type": "single",
+      "question": "∫_1^∞ 1/x^p 收敛的条件是？",
+      "options": [
+        "p > 0",
+        "p > 1",
+        "p < 1",
+        "对所有 p 都收敛"
+      ],
+      "answer": 1,
+      "explain": "p > 1 时原函数 x^(1−p)/(1−p) 在无穷远处趋于 0；p ≤ 1 时发散。对照 ∫_0^1 1/x^p 的条件是 p < 1。"
+    },
+    {
+      "id": "q03",
+      "chapterId": "ch06",
+      "type": "single",
+      "question": "Γ(5) 等于？",
+      "options": [
+        "5!",
+        "4!",
+        "5",
+        "24/5"
+      ],
+      "answer": 1,
+      "explain": "Γ(n+1) = n!，所以 Γ(5) = 4! = 24。注意指标偏移一格。"
+    },
+    {
+      "id": "q04",
+      "chapterId": "ch07",
+      "type": "single",
+      "question": "设 f(x, y) = xy/(x² + y²)（原点补 0），则 f 在原点？",
+      "options": [
+        "可微",
+        "两个偏导存在但不连续",
+        "不可微且偏导不存在",
+        "连续但偏导不存在"
+      ],
+      "answer": 1,
+      "explain": "沿坐标轴 f 恒为 0，两个偏导都是 0；沿 y = x 极限为 1/2，不连续，故不可微。"
+    },
+    {
+      "id": "q05",
+      "chapterId": "ch07",
+      "type": "single",
+      "question": "隐函数定理中，保证能解出 y = φ(x) 的关键条件是？",
+      "options": [
+        "F(a,b) = 0",
+        "F 连续",
+        "∂F/∂y(a,b) 可逆",
+        "∂F/∂x(a,b) 可逆"
+      ],
+      "answer": 2,
+      "explain": "要对 y 求解，必须让 y 方向的导数可逆，才能用压缩映射把 y 反解出来。"
+    },
+    {
+      "id": "q06",
+      "chapterId": "ch07",
+      "type": "single",
+      "question": "约束极值中，若 ∇g(a) ≠ 0，极值点满足？",
+      "options": [
+        "∇f(a) = 0",
+        "∇f(a) = λ∇g(a)",
+        "∇g(a) = λ∇f(a)",
+        "f(a) = g(a)"
+      ],
+      "answer": 1,
+      "explain": "等值面与约束面在极值点相切，法向量平行，故梯度成比例，比例因子就是乘子 λ。"
+    },
+    {
+      "id": "q07",
+      "chapterId": "ch08",
+      "type": "single",
+      "question": "关于全变差，正确的说法是？",
+      "options": [
+        "连续曲线的全变差总有限",
+        "全变差是折线长度的上确界",
+        "全变差等于端点距离",
+        "全变差只对直线有限"
+      ],
+      "answer": 1,
+      "explain": "定义就是 sup 折线长度。连续曲线可以不可求长，端点距离只是下界。"
+    },
+    {
+      "id": "q08",
+      "chapterId": "ch08",
+      "type": "single",
+      "question": "ω = (x dy − y dx)/(x² + y²) 在 ℝ² 去掉原点后？",
+      "options": [
+        "恰当",
+        "闭但不恰当",
+        "既不闭也不恰当",
+        "恒为 0"
+      ],
+      "answer": 1,
+      "explain": "混合偏导相等故闭；但绕单位圆积分 2π ≠ 0，所以不存在单值势函数。"
+    },
+    {
+      "id": "q09",
+      "chapterId": "ch08",
+      "type": "single",
+      "question": "∮_{|z|=1} dz/z 的值是？",
+      "options": [
+        "0",
+        "2πi",
+        "πi",
+        "1"
+      ],
+      "answer": 1,
+      "explain": "1/z 在 0 处留数为 1，由留数定理积分等于 2πi·1。"
+    },
+    {
+      "id": "aii-x1",
+      "chapterId": "__all__",
+      "type": "single",
+      "question": "微积分基本定理 ∫_α^β f = F(β) − F(α) 成立，需要的核心条件是？",
+      "options": [
+        "f 有界",
+        "f 连续（或可积）且 F′ = f",
+        "f 单调",
+        "F 有界"
+      ],
+      "answer": 1,
+      "explain": "需要 f 可积，且 F 是可微函数、F′ = f。仅有界不够（Dirichlet 函数不可积）；单调也不是必要条件。"
+    },
+    {
+      "id": "aii-x2",
+      "chapterId": "__all__",
+      "type": "single",
+      "question": "把「线积分只依赖端点」与「微分学」联系起来，正确的说法是？",
+      "options": [
+        "任何 1-形式都路径无关",
+        "恰当形式的线积分等于势函数在端点的差",
+        "闭形式一定恰当",
+        "路径无关只对直线成立"
+      ],
+      "answer": 1,
+      "explain": "ω = df 时 ∫_γ ω = f(终点) − f(起点)，这是牛顿–莱布尼茨公式的曲线版。闭形式只在单连通区域上恰当。"
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "f01",
+      "chapterId": "ch06",
+      "front": "积分为什么先用阶梯函数定义？",
+      "back": "阶梯函数的积分是有限和，无极限；再用一致逼近延拓到跳跃连续函数，保证唯一性。",
+      "tags": [
+        "积分",
+        "构造"
+      ]
+    },
+    {
+      "id": "f02",
+      "chapterId": "ch06",
+      "front": "可积的实用判据？",
+      "back": "对每个 ε > 0 存在阶梯函数 φ 使 sup|f − φ| < ε。",
+      "tags": [
+        "积分"
+      ]
+    },
+    {
+      "id": "f03",
+      "chapterId": "ch06",
+      "front": "微积分基本定理的两半各说什么？",
+      "back": "变上限积分求导得 f；反过来 ∫f = F(β) − F(α)。",
+      "tags": [
+        "基本定理"
+      ]
+    },
+    {
+      "id": "f04",
+      "chapterId": "ch06",
+      "front": "∫ sin x / x 收敛吗？绝对收敛吗？",
+      "back": "收敛（条件收敛），绝对值积分发散。",
+      "tags": [
+        "反常积分"
+      ]
+    },
+    {
+      "id": "f05",
+      "chapterId": "ch06",
+      "front": "Γ 函数与阶乘的关系？",
+      "back": "Γ(n+1) = n!，由 Γ(z+1) = zΓ(z) 与 Γ(1)=1 推出。",
+      "tags": [
+        "伽马函数"
+      ]
+    },
+    {
+      "id": "f06",
+      "chapterId": "ch07",
+      "front": "多变量导数的定义？",
+      "back": "存在线性映射 A 使 f(a+h)=f(a)+Ah+r(h)，‖r(h)‖/‖h‖→0。",
+      "tags": [
+        "微分"
+      ]
+    },
+    {
+      "id": "f07",
+      "chapterId": "ch07",
+      "front": "偏导存在为什么不足以保证可微？",
+      "back": "偏导只管坐标轴方向；可微要求所有方向的误差统一为 o(‖h‖)。xy/(x²+y²) 是反例。",
+      "tags": [
+        "微分",
+        "反例"
+      ]
+    },
+    {
+      "id": "f08",
+      "chapterId": "ch07",
+      "front": "算子范数是什么？",
+      "back": "‖A‖ = sup{‖Ax‖ : ‖x‖ ≤ 1}，是线性映射的最大放大倍数。",
+      "tags": [
+        "算子"
+      ]
+    },
+    {
+      "id": "f09",
+      "chapterId": "ch07",
+      "front": "逆映射定理的条件？",
+      "back": "f 是 C¹ 且 f′(a) 是拓扑同构（可逆且逆连续）。",
+      "tags": [
+        "逆映射"
+      ]
+    },
+    {
+      "id": "f10",
+      "chapterId": "ch07",
+      "front": "拉格朗日乘子的几何解释？",
+      "back": "目标函数等值面与约束面在极值点相切，梯度平行。",
+      "tags": [
+        "极值"
+      ]
+    },
+    {
+      "id": "f11",
+      "chapterId": "ch08",
+      "front": "弧长怎么定义？",
+      "back": "分割折线长度的上确界，即全变差；C¹ 时等于 ∫‖γ′‖。",
+      "tags": [
+        "弧长"
+      ]
+    },
+    {
+      "id": "f12",
+      "chapterId": "ch08",
+      "front": "连续曲线一定可求长吗？",
+      "back": "不一定。t cos²(π/2t) 是连续但全变差无穷的例子。",
+      "tags": [
+        "弧长"
+      ]
+    },
+    {
+      "id": "f13",
+      "chapterId": "ch08",
+      "front": "恰当形式的积分性质？",
+      "back": "∫_γ ω = f(终点) − f(起点)，与路径无关。",
+      "tags": [
+        "线积分"
+      ]
+    },
+    {
+      "id": "f14",
+      "chapterId": "ch08",
+      "front": "闭形式何时恰当？",
+      "back": "单连通区域上闭 ⇒ 恰当；有洞时不成立，(xdy−ydx)/(x²+y²) 是反例。",
+      "tags": [
+        "线积分"
+      ]
+    },
+    {
+      "id": "f15",
+      "chapterId": "ch08",
+      "front": "柯西–黎曼方程？",
+      "back": "u_x = v_y，u_y = −v_x；等价于复可微。",
+      "tags": [
+        "全纯"
+      ]
+    }
+  ],
+  "companion": "analysis-ii学习伴侣.html"
+}

@@ -1,0 +1,757 @@
+{
+  "slug": "analysis-i",
+  "title": "分析 I",
+  "subtitle": "从皮亚诺公理到函数列：实数分析的骨架",
+  "book": {
+    "title": "分析 I（Analysis I）",
+    "author": "Herbert Amann / Joachim Escher",
+    "source": [
+      "分析 I (Herbert Amann  Joachim Escher) (z-library.sk, 1lib.sk, z-lib.sk).pdf"
+    ]
+  },
+  "audience": "零基础（会不等式与代数变形即可）",
+  "goal": "系统掌握实数分析的基础：序完备、极限、连续、微分、函数列",
+  "learningPath": [
+    {
+      "step": "01",
+      "title": "数系与序完备性",
+      "chapterIds": [
+        "ch01"
+      ],
+      "checkpoint": "ch01 自测三题全对"
+    },
+    {
+      "step": "02",
+      "title": "极限与完备性",
+      "chapterIds": [
+        "ch02"
+      ],
+      "checkpoint": "ch02 自测三题"
+    },
+    {
+      "step": "03",
+      "title": "连续与紧致",
+      "chapterIds": [
+        "ch03"
+      ],
+      "checkpoint": "ch03 自测三题"
+    },
+    {
+      "step": "04",
+      "title": "微分与泰勒",
+      "chapterIds": [
+        "ch04"
+      ],
+      "checkpoint": "ch04 自测三题"
+    },
+    {
+      "step": "05",
+      "title": "函数列与解析",
+      "chapterIds": [
+        "ch05"
+      ],
+      "checkpoint": "ch05 自测三题"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "第 1 章：基础",
+      "file": "chapters/ch01-foundations.md",
+      "difficulty": 2
+    },
+    {
+      "id": "ch02",
+      "title": "第 2 章：收敛性",
+      "file": "chapters/ch02-convergence.md",
+      "difficulty": 2
+    },
+    {
+      "id": "ch03",
+      "title": "第 3 章：连续函数",
+      "file": "chapters/ch03-continuity.md",
+      "difficulty": 2
+    },
+    {
+      "id": "ch04",
+      "title": "第 4 章：一元微分学",
+      "file": "chapters/ch04-differentiation.md",
+      "difficulty": 2
+    },
+    {
+      "id": "ch05",
+      "title": "第 5 章：函数序列",
+      "file": "chapters/ch05-function-sequences.md",
+      "difficulty": 3
+    }
+  ],
+  "concepts": [
+    {
+      "id": "c01",
+      "title": "上确界与序完备性",
+      "file": "concepts/supremum-completeness.md",
+      "chapterIds": [
+        "ch01",
+        "ch02"
+      ]
+    },
+    {
+      "id": "c02",
+      "title": "可数与不可数",
+      "file": "concepts/countability.md",
+      "chapterIds": [
+        "ch01"
+      ]
+    },
+    {
+      "id": "c03",
+      "title": "柯西列与完备性",
+      "file": "concepts/cauchy-completeness.md",
+      "chapterIds": [
+        "ch02",
+        "ch03"
+      ]
+    },
+    {
+      "id": "c04",
+      "title": "紧致性",
+      "file": "concepts/compactness.md",
+      "chapterIds": [
+        "ch03",
+        "ch04"
+      ]
+    },
+    {
+      "id": "c05",
+      "title": "一致收敛",
+      "file": "concepts/uniform-convergence.md",
+      "chapterIds": [
+        "ch05"
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "陈述",
+      "def": "能判断真假的句子，有且只有一个真值。",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "上界",
+      "def": "对集合 A 中每个元素 a 都满足 a ≤ s 的元素 s。",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "上确界",
+      "def": "最小的上界，记 sup A；不必属于 A。",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "序完备",
+      "def": "每个非空上有界子集都有上确界。",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "可数",
+      "def": "存在到 ℕ 的双射（有限集也算）。",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "群",
+      "def": "集合配运算，满足结合律、有单位元、每元有逆元。",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "域",
+      "def": "交换环，每个非零元有乘法逆元。",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "同态",
+      "def": "保持运算结构的映射。",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "度量",
+      "def": "满足正定性、对称性、三角不等式的距离函数。",
+      "chapterId": "ch02"
+    },
+    {
+      "term": "赋范空间",
+      "def": "向量空间配范数，由 d(x,y)=‖x−y‖ 得到度量。",
+      "chapterId": "ch02"
+    },
+    {
+      "term": "柯西列",
+      "def": "任意 ε > 0，足够靠后的任意两项距离小于 ε。",
+      "chapterId": "ch02"
+    },
+    {
+      "term": "完备",
+      "def": "每个柯西列都收敛到空间内的点。",
+      "chapterId": "ch02"
+    },
+    {
+      "term": "绝对收敛",
+      "def": "各项范数构成的级数收敛。",
+      "chapterId": "ch02"
+    },
+    {
+      "term": "条件收敛",
+      "def": "级数收敛但绝对值级数发散。",
+      "chapterId": "ch02"
+    },
+    {
+      "term": "收敛半径",
+      "def": "幂级数绝对收敛的圆盘半径，1/R = limsup|aₙ|^(1/n)。",
+      "chapterId": "ch02"
+    },
+    {
+      "term": "连续",
+      "def": "每点处：对任意 ε 存在 δ，输入距离小于 δ 时输出误差小于 ε。",
+      "chapterId": "ch03"
+    },
+    {
+      "term": "开集",
+      "def": "任一点都含有一个完全属于它的开球的集合。",
+      "chapterId": "ch03"
+    },
+    {
+      "term": "紧致",
+      "def": "每个开覆盖都有有限子覆盖（度量空间等价于序列紧致）。",
+      "chapterId": "ch03"
+    },
+    {
+      "term": "连通",
+      "def": "不能表示为两个不交非空开集之并。",
+      "chapterId": "ch03"
+    },
+    {
+      "term": "一致连续",
+      "def": "对任意 ε 存在统一的 δ，对所有点同时有效。",
+      "chapterId": "ch03"
+    },
+    {
+      "term": "导数",
+      "def": "差商 (f(x)−f(a))/(x−a) 当 x→a 的极限。",
+      "chapterId": "ch04"
+    },
+    {
+      "term": "可微",
+      "def": "在一点可用仿射函数逼近，误差比一阶更快趋零。",
+      "chapterId": "ch04"
+    },
+    {
+      "term": "中值定理",
+      "def": "存在内点 ξ 使 f(b)−f(a)=f′(ξ)(b−a)。",
+      "chapterId": "ch04"
+    },
+    {
+      "term": "泰勒公式",
+      "def": "用各阶导数在展开点构造多项式逼近，余项可写成皮亚诺或拉格朗日形式。",
+      "chapterId": "ch04"
+    },
+    {
+      "term": "压缩映射",
+      "def": "满足 d(Tx,Ty) ≤ Ld(x,y)（L<1）的映射，有唯一不动点。",
+      "chapterId": "ch04"
+    },
+    {
+      "term": "逐点收敛",
+      "def": "每个固定 x 处函数值收敛，N 可依赖 x。",
+      "chapterId": "ch05"
+    },
+    {
+      "term": "一致收敛",
+      "def": "sup 误差趋于 0，N 只依赖 ε。",
+      "chapterId": "ch05"
+    },
+    {
+      "term": "解析函数",
+      "def": "局部可展开成收敛幂级数的函数。",
+      "chapterId": "ch05"
+    },
+    {
+      "term": "M-判别法",
+      "def": "用收敛的正项级数统一控制各项 sup 范数，从而得到一致收敛。",
+      "chapterId": "ch05"
+    }
+  ],
+  "patterns": {
+    "file": "patterns.md"
+  },
+  "cheatsheet": {
+    "file": "cheatsheet.md"
+  },
+  "quizzes": [
+    {
+      "id": "q01",
+      "chapterId": "ch01",
+      "type": "single",
+      "question": "下列哪个集合在 ℚ 中没有上确界？",
+      "options": [
+        "{x ∈ ℚ : x < 1}",
+        "{x ∈ ℚ : x² < 2 且 x > 0}",
+        "{x ∈ ℚ : 0 ≤ x ≤ 1}",
+        "{x ∈ ℚ : x² < 4 且 x > 0}"
+      ],
+      "answer": 1,
+      "explain": "前三个的上确界分别是 1、1、2，都在 ℚ 中。第二个集合的上确界是 √2，不在 ℚ 中；书中用 ξ = (2c+2)/(c+2) 证明任何有理上界都能被改进。"
+    },
+    {
+      "id": "q02",
+      "chapterId": "ch01",
+      "type": "single",
+      "question": "皮亚诺公理中，哪一条保证数学归纳法可用？",
+      "options": [
+        "0 ∈ ℕ",
+        "后继是单射",
+        "归纳公理（第 5 条）",
+        "0 不是任何数的后继"
+      ],
+      "answer": 2,
+      "explain": "前四条只刻画后继链，第 5 条排除“链外还有多余元素”的模型，归纳才能覆盖整个 ℕ。"
+    },
+    {
+      "id": "q03",
+      "chapterId": "ch01",
+      "type": "single",
+      "question": "关于集合的可数性，下列判断正确的是？",
+      "options": [
+        "ℚ 不可数",
+        "ℝ 可数",
+        "ℤ 与 ℚ 都可数",
+        "有限集不可数"
+      ],
+      "answer": 2,
+      "explain": "ℤ 可按 0,1,−1,2,−2,… 排队；ℚ 可按 |p|+q 分层排队。ℝ 由康托对角线不可数，有限集按定义可数。"
+    },
+    {
+      "id": "q04",
+      "chapterId": "ch02",
+      "type": "single",
+      "question": "数列 xₙ = (−1)ⁿ 的收敛情况是？",
+      "options": [
+        "收敛到 1",
+        "收敛到 −1",
+        "不收敛",
+        "收敛到 0"
+      ],
+      "answer": 2,
+      "explain": "取 ε₀ = 1，任何 N 之后都能找到奇偶两项，距离为 2，不满足柯西条件，因此不收敛。"
+    },
+    {
+      "id": "q05",
+      "chapterId": "ch02",
+      "type": "single",
+      "question": "下列空间中，哪一个在通常度量下不完备？",
+      "options": [
+        "ℝ",
+        "ℂ",
+        "ℚ",
+        "ℝ²"
+      ],
+      "answer": 2,
+      "explain": "√2 的截断小数是 ℚ 中的柯西列，但极限不在 ℚ 中。ℝ、ℂ、ℝ² 都完备。"
+    },
+    {
+      "id": "q06",
+      "chapterId": "ch02",
+      "type": "single",
+      "question": "关于级数，正确的说法是？",
+      "options": [
+        "通项趋于 0 则级数收敛",
+        "在巴拿赫空间中绝对收敛必定收敛",
+        "条件收敛的级数重排后仍收敛到同一值",
+        "收敛级数必定绝对收敛"
+      ],
+      "answer": 1,
+      "explain": "A 错，调和级数通项趋于 0 却发散；C 错，重排可改变和甚至发散；D 错，交错调和级数收敛但绝对值级数发散。"
+    },
+    {
+      "id": "q07",
+      "chapterId": "ch03",
+      "type": "single",
+      "question": "f(x) = 1/x 在 (0, 1) 上的一致连续性如何？",
+      "options": [
+        "一致连续",
+        "连续但非一致连续",
+        "不连续",
+        "只在 (1/2,1) 上一致连续"
+      ],
+      "answer": 1,
+      "explain": "取 xₙ = 1/n，yₙ = 1/(n+1)，两点距离趋于 0，函数值之差恒为 1，不存在统一 δ。定义域不紧致，正是一致连续失效的典型场景。"
+    },
+    {
+      "id": "q08",
+      "chapterId": "ch03",
+      "type": "single",
+      "question": "下列哪个条件能保证连续函数 f : X → ℝ 取到最小值？",
+      "options": [
+        "X 是开区间",
+        "X 紧致",
+        "f 有界",
+        "X 连通"
+      ],
+      "answer": 1,
+      "explain": "紧集上连续函数取到最大最小值。开区间、连通都不够（f(x)=x 在 (0,1) 无最小值）；仅有界也不够。"
+    },
+    {
+      "id": "q09",
+      "chapterId": "ch03",
+      "type": "single",
+      "question": "介值定理成立的必要条件不包括？",
+      "options": [
+        "定义域连通",
+        "函数连续",
+        "值域是一维有序的",
+        "函数可微"
+      ],
+      "answer": 3,
+      "explain": "介值定理只用连续性，不要求可微。去掉连通、去掉连续、或换成复值，结论都会失效。"
+    },
+    {
+      "id": "q10",
+      "chapterId": "ch04",
+      "type": "single",
+      "question": "f(x) = |x| 在 x = 0 处？",
+      "options": [
+        "可微且导数为 0",
+        "连续但不可微",
+        "不连续",
+        "可微但导数不存在"
+      ],
+      "answer": 1,
+      "explain": "左右差商分别为 1 和 −1，极限不存在，所以不可微；但函数本身连续。"
+    },
+    {
+      "id": "q11",
+      "chapterId": "ch04",
+      "type": "single",
+      "question": "设 f 在 [0, 2] 上可微，f(0) = 0，f(2) = 4，则一定能推出？",
+      "options": [
+        "存在 ξ 使 f′(ξ) = 2",
+        "f′ 处处等于 2",
+        "f 单调递增",
+        "f″ 存在"
+      ],
+      "answer": 0,
+      "explain": "拉格朗日中值定理给出 f(2) − f(0) = f′(ξ)(2 − 0)，即 f′(ξ) = 2。其余三项都不保证。"
+    },
+    {
+      "id": "q12",
+      "chapterId": "ch04",
+      "type": "single",
+      "question": "用牛顿法求 f(x) = x² − 2 的正根，初值 x₀ = 1，迭代式是？",
+      "options": [
+        "xₙ₊₁ = (xₙ + 2/xₙ)/2",
+        "xₙ₊₁ = xₙ − xₙ²",
+        "xₙ₊₁ = 2/xₙ",
+        "xₙ₊₁ = xₙ + 1"
+      ],
+      "answer": 0,
+      "explain": "x − f/f′ = x − (x² − 2)/(2x) = (x + 2/x)/2，这是求平方根的标准迭代，误差平方级下降。"
+    },
+    {
+      "id": "q13",
+      "chapterId": "ch05",
+      "type": "single",
+      "question": "fₙ(x) = xⁿ 在下列哪个区间上一致收敛到 0？",
+      "options": [
+        "[0,1]",
+        "[0,1)",
+        "[0, 0.9]",
+        "(−1,1]"
+      ],
+      "answer": 2,
+      "explain": "在 [0,1] 上极限函数在 1 处跳到 1，不一致；[0,0.9] 上 sup|fₙ| ≤ 0.9ⁿ → 0，一致收敛。"
+    },
+    {
+      "id": "q14",
+      "chapterId": "ch05",
+      "type": "single",
+      "question": "若 fₙ 一致收敛到 f，且每个 fₙ 连续，则？",
+      "options": [
+        "f 一定可微",
+        "f 一定连续",
+        "fₙ′ 一定一致收敛",
+        "f 一定有界"
+      ],
+      "answer": 1,
+      "explain": "一致收敛传递连续性。可微、导数收敛都不保证；f 在有界区间上才有界，题干没说 X 有界。"
+    },
+    {
+      "id": "q15",
+      "chapterId": "ch05",
+      "type": "single",
+      "question": "关于解析函数，正确的说法是？",
+      "options": [
+        "解析与 C∞ 等价",
+        "解析函数在收敛圆内可逐项求导",
+        "解析函数的泰勒级数处处收敛到自身",
+        "解析函数一定是有理函数"
+      ],
+      "answer": 1,
+      "explain": "A 错，e^(−1/x²) 是 C∞ 但不解析；C 错，只在收敛圆内；D 错，exp、sin 都是超越函数。"
+    },
+    {
+      "id": "ai-x1",
+      "chapterId": "__all__",
+      "type": "single",
+      "question": "设 fₙ(x) = xⁿ 在 [0,1] 上。下列说法正确的是？",
+      "options": [
+        "一致收敛且极限连续",
+        "逐点收敛但极限不连续，说明逐点收敛不足以保证连续性传递",
+        "不逐点收敛",
+        "一致收敛但极限不连续"
+      ],
+      "answer": 1,
+      "explain": "每点收敛到 0（x<1）或 1（x=1），极限在 1 处跳跃。每条 fₙ 连续，极限不连续，正好说明连续性传递需要一致收敛。"
+    },
+    {
+      "id": "ai-x2",
+      "chapterId": "__all__",
+      "type": "blank",
+      "question": "计算 sup{1 − 1/n : n ∈ ℕ, n ≥ 1}，填数值。",
+      "options": [],
+      "answer": "1",
+      "explain": "集合单调递增趋近 1，且每项都小于 1，所以 1 是最小上界；它不在集合内，说明上确界不必是集合的元素。"
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "f01",
+      "chapterId": "ch01",
+      "front": "序完备性说的是什么？",
+      "back": "每个非空、上有界的子集都有上确界。ℝ 满足，ℚ 不满足。",
+      "tags": [
+        "完备性",
+        "实数"
+      ]
+    },
+    {
+      "id": "f02",
+      "chapterId": "ch01",
+      "front": "皮亚诺第 5 条公理的作用？",
+      "back": "把“从 0 起逐個到达”变成公理，保证归纳法覆盖整个 ℕ。",
+      "tags": [
+        "自然数",
+        "归纳"
+      ]
+    },
+    {
+      "id": "f03",
+      "chapterId": "ch01",
+      "front": "ℚ 中 {x : x² < 2, x > 0} 有上确界吗？",
+      "back": "没有。它的上确界是 √2，不在 ℚ 中。",
+      "tags": [
+        "完备性",
+        "反例"
+      ]
+    },
+    {
+      "id": "f04",
+      "chapterId": "ch01",
+      "front": "可数与稠密的区别？",
+      "back": "可数=存在到 ℕ 的双射；稠密=任意两数之间还有数。ℚ 既稠密又可数。",
+      "tags": [
+        "可数"
+      ]
+    },
+    {
+      "id": "f05",
+      "chapterId": "ch01",
+      "front": "数系扩张的统一手法？",
+      "back": "造一个更大的集合，再按等价关系取商（如整数用差相同，分数用交叉相乘相等）。",
+      "tags": [
+        "构造"
+      ]
+    },
+    {
+      "id": "f06",
+      "chapterId": "ch02",
+      "front": "ε-N 定义中三个容易忽略的点？",
+      "back": "ε 任意；N 依赖 ε；只要求从 N 以后成立。",
+      "tags": [
+        "极限",
+        "定义"
+      ]
+    },
+    {
+      "id": "f07",
+      "chapterId": "ch02",
+      "front": "柯西列与收敛列的关系？",
+      "back": "收敛 ⇒ 柯西；柯西 ⇒ 收敛只在完备空间成立。",
+      "tags": [
+        "完备性"
+      ]
+    },
+    {
+      "id": "f08",
+      "chapterId": "ch02",
+      "front": "单调有界定理为什么好用？",
+      "back": "不需要猜极限，只要验证“递增 + 有上界”，收敛性与极限存在性一起得到。",
+      "tags": [
+        "极限"
+      ]
+    },
+    {
+      "id": "f09",
+      "chapterId": "ch02",
+      "front": "绝对收敛与条件收敛的差别？",
+      "back": "绝对收敛=绝对值级数收敛，可任意重排；条件收敛重排会改变和。",
+      "tags": [
+        "级数"
+      ]
+    },
+    {
+      "id": "f10",
+      "chapterId": "ch02",
+      "front": "幂级数的收敛集合形状？",
+      "back": "以展开点为心的圆盘；半径由 1/R = limsup |aₙ|^(1/n) 给出。",
+      "tags": [
+        "幂级数"
+      ]
+    },
+    {
+      "id": "f11",
+      "chapterId": "ch03",
+      "front": "连续性的开集刻画？",
+      "back": "f 连续 ⇔ 每个开集的原像是开集。",
+      "tags": [
+        "连续",
+        "拓扑"
+      ]
+    },
+    {
+      "id": "f12",
+      "chapterId": "ch03",
+      "front": "紧致性的两条等价说法（度量空间）？",
+      "back": "开覆盖有有限子覆盖；每个序列有收敛子列。",
+      "tags": [
+        "紧致"
+      ]
+    },
+    {
+      "id": "f13",
+      "chapterId": "ch03",
+      "front": "为什么紧集上连续函数一致连续？",
+      "back": "若没有统一 δ，可取 xₙ、yₙ 距离趋 0 而函数值差 ≥ ε，紧性抽出共同极限点，与连续性矛盾。",
+      "tags": [
+        "紧致",
+        "一致连续"
+      ]
+    },
+    {
+      "id": "f14",
+      "chapterId": "ch03",
+      "front": "介值定理对复值函数成立吗？",
+      "back": "不成立。值域必须是一维有序的；复值可以绕圈避开中间值。",
+      "tags": [
+        "介值"
+      ]
+    },
+    {
+      "id": "f15",
+      "chapterId": "ch03",
+      "front": "exp 怎么定义？",
+      "back": "exp(z) = Σ zⁿ/n!，绝对收敛；由柯西乘积得加法定理。",
+      "tags": [
+        "指数函数"
+      ]
+    },
+    {
+      "id": "f16",
+      "chapterId": "ch04",
+      "front": "可微的线性逼近说法？",
+      "back": "存在仿射 g 使 f(a)=g(a) 且 ‖f(x)−g(x)‖/|x−a| → 0。",
+      "tags": [
+        "微分"
+      ]
+    },
+    {
+      "id": "f17",
+      "chapterId": "ch04",
+      "front": "罗尔定理的证明关键？",
+      "back": "紧区间上连续函数取到极值；内部极值处导数为 0；端点极值则函数为常数。",
+      "tags": [
+        "中值定理"
+      ]
+    },
+    {
+      "id": "f18",
+      "chapterId": "ch04",
+      "front": "泰勒两种余项各适合什么？",
+      "back": "皮亚诺余项适合求极限；拉格朗日余项给出具体误差界。",
+      "tags": [
+        "泰勒"
+      ]
+    },
+    {
+      "id": "f19",
+      "chapterId": "ch04",
+      "front": "牛顿法何时退化？",
+      "back": "f′ 接近 0、根为重根、初值不在吸引域时；收敛从二次退化为线性或发散。",
+      "tags": [
+        "迭代"
+      ]
+    },
+    {
+      "id": "f20",
+      "chapterId": "ch04",
+      "front": "f′(a)=0 一定是极值吗？",
+      "back": "不一定。x³ 在 0 处导数为 0 但不是极值。",
+      "tags": [
+        "极值"
+      ]
+    },
+    {
+      "id": "f21",
+      "chapterId": "ch05",
+      "front": "逐点与一致收敛的唯一差别？",
+      "back": "N 是否依赖 x。一致收敛的 N 只依赖 ε。",
+      "tags": [
+        "一致收敛"
+      ]
+    },
+    {
+      "id": "f22",
+      "chapterId": "ch05",
+      "front": "一致收敛能传递微分吗？",
+      "back": "不能，除非导数列也一致收敛，且原列在某点收敛。",
+      "tags": [
+        "一致收敛",
+        "微分"
+      ]
+    },
+    {
+      "id": "f23",
+      "chapterId": "ch05",
+      "front": "M-判别法说什么？",
+      "back": "若 ‖fₙ‖∞ ≤ Mₙ 且 ΣMₙ 收敛，则 Σfₙ 一致且绝对收敛。",
+      "tags": [
+        "级数",
+        "一致收敛"
+      ]
+    },
+    {
+      "id": "f24",
+      "chapterId": "ch05",
+      "front": "解析与 C∞ 的区别？",
+      "back": "解析要求局部等于幂级数；C∞ 只要求无穷次可微。e^(−1/x²) 是 C∞ 但不解析。",
+      "tags": [
+        "解析"
+      ]
+    },
+    {
+      "id": "f25",
+      "chapterId": "ch05",
+      "front": "魏尔斯特拉斯逼近定理？",
+      "back": "紧区间上连续函数可用多项式一致逼近（Bernstein 多项式给出构造）。",
+      "tags": [
+        "逼近"
+      ]
+    }
+  ],
+  "companion": "analysis-i学习伴侣.html"
+}
